@@ -91,6 +91,6 @@ agent_executor = AgentExecutor(agent=agent, tools=toolkit, verbose=True)
 
 # Teste básico
 #result = agent_executor.invoke({"input": r"Eu quero que você formate esse meu código python. path: C:\Users\admin\Documents\Python\Agente_IA\scrapper.py"})
-result = agent_executor.invoke({"input": "Eu quero que você formate esse meu código python. path: C:/Users/admin/Documents/Python/Agente_IA/scrapper.py"})
+result = agent_executor.invoke({"input": "Quais as métricas padrão que o MLFLOW fornece para avaliar um modelo de texto baseado na documentação dessa url: https://mlflow.org/docs/latest/genai/eval-monitor/llm-evaluation/"})
 
-print(result)
+print(result["output"])

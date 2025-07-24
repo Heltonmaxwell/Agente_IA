@@ -13,7 +13,7 @@ def get_text_from_url(url):
 
         #Remove Scripts e Styles do texto
         for script_or_style in soup(["script", "style"]):
-            script_or_style.decompose()
+            script_or_style.decompose
 
         #Obtém o texto puro.
         text = soup.get_text()
